@@ -1,5 +1,7 @@
 export default function Header() {
-    const dataFormatada = new Date().toLocaleDateString('pt-br', { dateStyle: 'full' })
+    const dataFormatada = new Date().toLocaleDateString('pt-br', {
+        dateStyle: 'full',
+    })
 
     return (
         <header>

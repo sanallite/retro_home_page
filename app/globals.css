@@ -3,16 +3,16 @@ body {
     margin: 0;
 }
 
-.background {
+.fundo {
     min-height: 100vh;
-    transition: background 0.3s ease
+    transition: background 0.3s ease;
 }
 
-.dark-background {
+.tema-chuva-fundo {
     background-color: midnightblue;
-    color: white
+    color: white;
 }
 
-.light-background {
+.tema-sol-fundo {
     background-color: lightskyblue;
 }
