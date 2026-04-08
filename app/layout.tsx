@@ -1,20 +1,26 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import ThemeProvider from '@/app/components/themeProvider'
+import { getWeatherComTimeout } from '@/lib/weatherInfo'
+import { ThemeProvider } from '@/context/themeContext'
+import ThemedBody from '@/components/themedBody'
 
 export const metadata: Metadata = {
     title: 'Retro Home Page',
     description: "Sanallite's Retro Home Page",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
+    const { temaClima } = await getWeatherComTimeout()
+
     return (
         <html lang='pt-br'>
-            <body>
-                <ThemeProvider>{children}</ThemeProvider>
-            </body>
+            <ThemeProvider tema={ temaClima }>
+                <ThemedBody>
+                    {children}
+                </ThemedBody>
+            </ThemeProvider>
         </html>
     )
 }

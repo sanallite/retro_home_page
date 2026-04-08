@@ -1,5 +1,6 @@
-import Header from '@/app/components/header'
+import Header from '@/components/header'
+import InfoClima from '@/components/infoClima'
 
 export default function Home() {
-    return <Header />
+    return <Header componenteInfoClima={<InfoClima />} />
 }
