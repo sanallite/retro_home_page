@@ -1,15 +1,40 @@
+.tema-sol {
+    --cor-borda: darkblue;
+    --cor-texto: white;
+    --cor-fundo: blue;
+    --espessura-borda: 3px;
+    --estilo-borda: solid;
+}
+
+.tema-chuva {
+    --cor-borda: white;
+    --cor-texto: black;
+    --cor-fundo: aliceblue;
+    --espessura-borda: 3px;
+    --estilo-borda: solid;
+}
+
 body {
     padding: 0;
-    margin: 0;
-    min-height: 100vh;
+    margin: auto;
     transition: background 0.3s ease;
+}
+
+@media (width > 1024px) {
+    body {
+        max-width: 60%;
+    }
 }
 
 body.tema-chuva {
     background-color: midnightblue;
-    color: white;
 }
 
 body.tema-sol {
     background-color: lightskyblue;
+}
+
+.sidebar-main {
+    display: flex;
+    flex-direction: row;
 }

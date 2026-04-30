@@ -16,10 +16,8 @@ export default async function RootLayout({
 
     return (
         <html lang='pt-br'>
-            <ThemeProvider tema={ temaClima }>
-                <ThemedBody>
-                    {children}
-                </ThemedBody>
+            <ThemeProvider tema={temaClima}>
+                <ThemedBody>{children}</ThemedBody>
             </ThemeProvider>
         </html>
     )

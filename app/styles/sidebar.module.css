@@ -1,0 +1,10 @@
+.sidebar {
+    margin: 0.4rem;
+    padding: 0.2rem;
+    width: 25%;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-style: var(--estilo-borda);
+    border-color: var(--cor-borda);
+    border-width: var(--espessura-borda);
+}

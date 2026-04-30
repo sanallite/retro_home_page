@@ -1,14 +1,9 @@
 .header {
     margin: 0.4rem;
     padding: 0.2rem;
-}
-
-.header.tema-sol {
-    background-color: white;
-    color: black
-}
-
-.header.tema-chuva {
-    background-color: black;
-    color: white
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    border-color: var(--cor-borda);
+    border-style: var(--estilo-borda);
+    border-width: var(--espessura-borda);
 }
