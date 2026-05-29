@@ -12,7 +12,7 @@ A ideia de criar um site seguindo os padrões de design da web antiga é uma que
 
 ## O que é a Indie Web?
 
-Além da sua [defnição formal](https://en.wikipedia.org/wiki/IndieWeb), a Indie Web é uma comunidade de pessoas que fazem seus próprios sites colocando sua auto-expressão como um dos príncipais objetivos, fugindo da corrente dos sites e redes sociais corporativos, cada vez mais monetizados, sem graça e artificiais. Por isso a maior inspiração de muitos nesse meio são os sites do início da World Wide Web até os anos 2000, que exalavam personalidade. Os principais hosts de sites independentes atualmente são [Nekoweb](https://nekoweb.org) e [Neocities](https://neocities.org). Porém este site será hospedado pela [Vercel](https://vercel.com/home?utm_source=next-site&utm_medium=footer&utm_campaign=next-website) para melhor compatibilidade com os recursos do Next.js.
+Além da sua [defnição formal](https://en.wikipedia.org/wiki/IndieWeb), a Indie Web é uma comunidade de pessoas que fazem seus próprios sites colocando sua auto-expressão como um dos príncipais objetivos, fugindo da corrente dos sites e redes sociais corporativos, cada vez mais monetizados, sem graça e artificiais. Por isso a maior inspiração de muitos nesse meio são os sites do início da World Wide Web até os anos 2000, que exalavam criatividade. Os principais hosts de sites independentes atualmente são [Nekoweb](https://nekoweb.org) e [Neocities](https://neocities.org). Porém este site será hospedado pela [Vercel](https://vercel.com/home) para melhor compatibilidade com os recursos do Next.js.
 
 ## Posicionamento sobre Inteligência Artificial
 

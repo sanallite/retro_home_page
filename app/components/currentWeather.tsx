@@ -1,7 +1,7 @@
 import { getCurrentWeather } from '@/lib/weatherInfo'
 import Image from 'next/image'
 
-export default async function InfoClima() {
+export default async function CurrentWeather() {
     const { condicaoClima, temperatura } = await getCurrentWeather()
 
     return (

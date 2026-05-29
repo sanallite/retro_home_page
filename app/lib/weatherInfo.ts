@@ -107,7 +107,7 @@ export const getCurrentWeather = cache(
     },
 )
 
-export const getWeatherComTimeout =
+export const getWeatherWithTimeout =
     async (): Promise<RetornoGetCurrentWeather> => {
         try {
             const timeout = new Promise<never>((_, reject) =>

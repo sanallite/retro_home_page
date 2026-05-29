@@ -10,3 +10,15 @@ export type RetornoGetCurrentWeather = {
         | 'chovendo'
         | 'tempestade'
 }
+
+export type PaginaAtiva = 'início' | 'portfólio'
+
+export type PropsMain = {
+    startPage: React.ReactNode
+    portfolioPage: React.ReactNode
+}
+
+export type PropsSidebar = {
+    activePage?: PaginaAtiva
+    setActivePage: (pagina: PaginaAtiva) => void
+}

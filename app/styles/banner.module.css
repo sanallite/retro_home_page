@@ -1,14 +1,14 @@
 .banner {
-    margin: 0.4rem;
+    margin: 0.2rem 0.4rem;
     position: relative;
     padding: 0;
-    height: 555px;
+    height: 320px;
     border-color: var(--cor-borda);
     border-style: var(--estilo-borda);
     border-width: var(--espessura-borda);
 }
 
-.title {
+.titulo {
     position: absolute;
     top: 0;
     margin: 1rem;

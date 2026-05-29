@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { getWeatherComTimeout } from '@/lib/weatherInfo'
+import { getWeatherWithTimeout } from '@/lib/weatherInfo'
 import { ThemeProvider } from '@/context/themeContext'
 import ThemedBody from '@/components/themedBody'
+import VideoBackground from '@/components/videoBackground'
 
 export const metadata: Metadata = {
     title: 'Retro Home Page',
@@ -12,12 +13,15 @@ export const metadata: Metadata = {
 export default async function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
-    const { temaClima } = await getWeatherComTimeout()
+    const { temaClima } = await getWeatherWithTimeout()
 
     return (
         <html lang='pt-br'>
-            <ThemeProvider tema={temaClima}>
-                <ThemedBody>{children}</ThemedBody>
+            <ThemeProvider theme={temaClima}>
+                <ThemedBody>
+                    <VideoBackground />
+                    {children}
+                </ThemedBody>
             </ThemeProvider>
         </html>
     )

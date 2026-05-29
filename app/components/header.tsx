@@ -4,9 +4,9 @@ import styles from '@/styles/header.module.css'
 import { useTema } from '@/context/themeContext'
 
 export default function Header({
-    componenteInfoClima,
+    weatherComponent,
 }: {
-    componenteInfoClima: React.ReactNode
+    weatherComponent: React.ReactNode
 }) {
     const dataFormatada = new Date().toLocaleDateString('pt-br', {
         dateStyle: 'full',
@@ -16,7 +16,7 @@ export default function Header({
 
     return (
         <header className={styles.header}>
-            {componenteInfoClima}
+            {weatherComponent}
             <p>Hoje é {dataFormatada}</p>
 
             <button onClick={() => setTema(tema === 'sol' ? 'chuva' : 'sol')}>

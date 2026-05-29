@@ -1,23 +1,26 @@
 .tema-sol {
     --cor-borda: darkblue;
-    --cor-texto: white;
-    --cor-fundo: blue;
-    --espessura-borda: 3px;
+    --cor-texto: black;
+    --cor-fundo: rgba(240, 248, 255, 0.6); /* Alice blue transparente */
+    --espessura-borda: 2px;
     --estilo-borda: solid;
 }
 
 .tema-chuva {
     --cor-borda: white;
     --cor-texto: black;
-    --cor-fundo: aliceblue;
-    --espessura-borda: 3px;
+    --cor-fundo: rgba(240, 248, 255, 0.6);
+    --espessura-borda: 2px;
     --estilo-borda: solid;
+}
+
+:root {
+    scrollbar-width: none;
 }
 
 body {
     padding: 0;
     margin: auto;
-    transition: background 0.3s ease;
 }
 
 @media (width > 1024px) {
@@ -26,15 +29,24 @@ body {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.video-fundo {
+    animation: fadeIn 0.5s ease;
+}
+
 body.tema-chuva {
-    background-color: midnightblue;
+    /* Fundos fallback */
+    background-color: black;
 }
 
 body.tema-sol {
     background-color: lightskyblue;
-}
-
-.sidebar-main {
-    display: flex;
-    flex-direction: row;
 }

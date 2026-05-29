@@ -9,10 +9,10 @@ const ThemeContext = createContext<{
 } | null>(null)
 
 export function ThemeProvider({
-    tema: temaInicial,
+    theme: temaInicial,
     children,
 }: {
-    tema: Clima
+    theme: Clima
     children: React.ReactNode
 }) {
     const [tema, setTema] = useState<Clima>(temaInicial)

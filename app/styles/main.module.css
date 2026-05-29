@@ -1,6 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .main {
     width: 75%;
-    margin: 0.4rem;
+}
+
+.sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_e_sidebar {
+    margin: 0.2rem;
     padding: 0.2rem;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);

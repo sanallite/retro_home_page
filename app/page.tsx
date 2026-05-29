@@ -1,18 +1,19 @@
 import Header from '@/components/header'
-import InfoClima from '@/components/infoClima'
+import CurrentWeather from '@/components/currentWeather'
 import Banner from '@/components/banner'
-import Sidebar from './components/sidebar'
-import StartPage from './components/startPage'
+import Main from '@/components/main'
+import StartPage from '@/components/startPage'
+import PortfolioPage from '@/components/portfolioPage'
 
 export default function Home() {
     return (
         <>
-            <Header componenteInfoClima={<InfoClima />} />
+            <Header weatherComponent={<CurrentWeather />} />
             <Banner />
-            <div className='sidebar-main'>
-                <Sidebar />
-                <StartPage />
-            </div>
+            <Main
+                startPage={<StartPage />}
+                portfolioPage={<PortfolioPage />}
+            ></Main>
         </>
     )
 }
