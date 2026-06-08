@@ -44,9 +44,9 @@ export default function PortfolioPage() {
                         <p>
                             Site full stack sem o uso de frameworks JS e CSS,
                             com integrações a bancos de dados interno e externo
-                            e uma API. Criação de elementos dinâmicamente,
-                            estilização avançada e responsiva. Hospedagem
-                            permanente e build e deploy com CI/CD.
+                            e uma API externa. Criação de elementos
+                            dinâmicamente, estilização avançada e responsiva.
+                            Hospedagem permanente e build e deploy com CI/CD.
                         </p>
 
                         <p>

@@ -12,21 +12,16 @@ export default function StartPage() {
                     um projeto pessoal de site que tem como objetivo ser uma
                     mistura de site pessoal com portifólio profissional, usando
                     como inspiração os sites da época inicial da internet, e da
-                    atual Indie Web, cheios de personalidade e estilo. O
-                    objetivo é explorar esse conceito, mas eu não sou tão
-                    criativo e não tenho tanto pra dizer quanto quem costuma
-                    fazer sites na Indie Web, então esse site não terá tanto
-                    conteúdo assim.
+                    atual Indie Web, cheios de personalidade e estilo.
                 </p>
 
                 <h3>Quem está por trás da foto de anime?</h3>
                 <p>
                     Meu nome é Márcio, sou um jovem paranaense que começou a
-                    aprender desenvolvimento web em 2022, consegui um diploma de
-                    tecnólogo em Informática para Internet em 2024, continuno
-                    aprendendo e em breve iniciarei uma graduação na área,
-                    enquanto continuo buscando uma oportunidade para trabalhar
-                    com isso. Já o resto só sendo meu amigo pra saber. {':)'}
+                    aprender desenvolvimento web em 2022. Concluí um curso
+                    técnico de Informática para Internet em 2024, continuno me
+                    aperfeiçoando e em breve iniciarei uma graduação na área. Já
+                    o resto só sendo meu amigo pra saber. {':)'}
                 </p>
 
                 <h3>O que é a Indie Web?</h3>
@@ -59,6 +54,20 @@ export default function StartPage() {
                     </a>{' '}
                     para melhor compatibilidade com os recursos do Next.js.
                 </p>
+
+                <h3>
+                    Ferramentas, bibliotecas e frameworks utilizadas nesse site
+                </h3>
+
+                <ul>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>OpenMeteo</li>
+                    <li>ESLint</li>
+                    <li>Prettier</li>
+                    <li>Figma</li>
+                </ul>
 
                 <h3>Créditos</h3>
                 <p>
@@ -152,6 +161,28 @@ export default function StartPage() {
                             href='https://www.flaticon.com/free-icon/rainy-day_4724094?term=weather&page=1&position=19&origin=tag&related_id=4724094'
                         >
                             clima chuvoso
+                        </a>
+                    </li>
+                    <li>
+                        Lazuli Ch. pela sua{' '}
+                        <a
+                            target='_blank'
+                            href='https://x.com/l4zufish/status/1943341324012519665/photo/1'
+                        >
+                            arte tomando água de coco.
+                        </a>
+                    </li>
+                    <li>
+                        Gifs de botões encontrados em:{' '}
+                        <a
+                            target='_blank'
+                            href='https://cyber.dabamos.de/88x31/'
+                        >
+                            The 88x31 Gif Collection
+                        </a>
+                        {' e '}
+                        <a target='_blank' href='https://gifcities.org'>
+                            GifCities
                         </a>
                     </li>
                 </ul>

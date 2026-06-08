@@ -21,4 +21,14 @@ export type PropsMain = {
 export type PropsSidebar = {
     activePage?: PaginaAtiva
     setActivePage: (pagina: PaginaAtiva) => void
+    views: number
 }
+
+interface ObjetoImagem {
+    src: string
+    alt: string
+    width: number
+    height: number
+}
+
+export type GaleriaGifs = ObjetoImagem[]
