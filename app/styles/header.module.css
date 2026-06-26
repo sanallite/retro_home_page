@@ -1,11 +1,32 @@
 .header {
     margin: 0.4rem;
-    padding: 0.2rem;
+    padding: 0.4rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
     border-color: var(--cor-borda);
     border-style: var(--estilo-borda);
     border-width: var(--espessura-borda);
+}
+
+.textos {
+    font-size: 1.2em;
+}
+
+.texto_clima {
+    display: flex;
+    align-items: center;
+}
+
+.icone_clima {
+    margin-left: 0.4em;
+}
+
+.botao_tema {
+    background-color: transparent;
+    border-width: 0;
+    cursor: pointer;
 }

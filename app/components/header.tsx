@@ -2,6 +2,7 @@
 
 import styles from '@/styles/header.module.css'
 import { useTema } from '@/context/themeContext'
+import Image from 'next/image'
 
 export default function Header({
     weatherComponent,
@@ -14,13 +15,24 @@ export default function Header({
 
     const { tema, setTema } = useTema()
 
+    const src =
+        tema === 'chuva' ? '/clima/tema_sol.png' : '/clima/tema_chuva.png'
+
     return (
         <header className={styles.header}>
             {weatherComponent}
-            <p>Hoje é {dataFormatada}</p>
+            <span className={styles.textos}>Hoje é {dataFormatada}</span>
 
-            <button onClick={() => setTema(tema === 'sol' ? 'chuva' : 'sol')}>
-                Alterar Tema
+            <button
+                className={styles.botao_tema}
+                onClick={() => setTema(tema === 'sol' ? 'chuva' : 'sol')}
+            >
+                <Image
+                    src={src}
+                    alt='Icone do botão para alterar o tema'
+                    width={50}
+                    height={50}
+                />
             </button>
         </header>
     )

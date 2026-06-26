@@ -1,26 +1,45 @@
-.tema-sol {
-    --cor-borda: darkblue;
-    --cor-texto: black;
-    --cor-fundo: rgba(240, 248, 255, 0.6); /* Alice blue transparente */
-    --espessura-borda: 2px;
-    --estilo-borda: solid;
-}
-
-.tema-chuva {
-    --cor-borda: white;
-    --cor-texto: black;
-    --cor-fundo: rgba(240, 248, 255, 0.6);
-    --espessura-borda: 2px;
-    --estilo-borda: solid;
-}
-
 :root {
     scrollbar-width: none;
+    --cor-botao-ativo: lightcyan;
+    --cor-texto-botao-ativo: darkblue;
+}
+
+.tema_sol {
+    --cor-borda: darkblue;
+    --cor-texto: white;
+    --cor-fundo: rgba(0, 0, 139, 0.8); /* Dark blue transparent */
+    --espessura-borda: 2px;
+    --estilo-borda: solid;
+    --cor-botao: white;
+    --cor-borda-botao: lightcyan;
+    --cor-texto-botao: darkblue;
+    --cor-links: lightcyan;
+}
+
+.tema_chuva {
+    --cor-borda: white;
+    --cor-texto: black;
+    --cor-fundo: rgba(240, 248, 255, 0.8); /* Alice blue transparente */
+    --espessura-borda: 2px;
+    --estilo-borda: solid;
+    --cor-botao: darkblue;
+    --cor-borda-botao: white;
+    --cor-texto-botao: white;
+    --cor-links: darkblue;
 }
 
 body {
     padding: 0;
     margin: auto;
+}
+
+body.tema_chuva {
+    /* Fundos fallback */
+    background-color: black;
+}
+
+body.tema_sol {
+    background-color: lightskyblue;
 }
 
 @media (width > 1024px) {
@@ -42,11 +61,15 @@ body {
     animation: fadeIn 0.5s ease;
 }
 
-body.tema-chuva {
-    /* Fundos fallback */
-    background-color: black;
+a {
+    color: var(--cor-links);
 }
 
-body.tema-sol {
-    background-color: lightskyblue;
+h2,
+h3 {
+    margin-bottom: 0;
+}
+
+hr {
+    color: var(--cor-texto);
 }

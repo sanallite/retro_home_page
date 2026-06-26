@@ -9,5 +9,5 @@ export default function ThemedBody({
 }) {
     const { tema: temaClima } = useTema()
 
-    return <body className={`tema-${temaClima}`}>{children}</body>
+    return <body className={`tema_${temaClima}`}>{children}</body>
 }

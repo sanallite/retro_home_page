@@ -5,6 +5,7 @@ export default function StartPage() {
         <main className={`${styles.main} ${styles.main_e_sidebar}`}>
             <article>
                 <h2>Bem vindos ao meu site!</h2>
+                <hr />
 
                 <p>
                     Olá, eu sou o Sanallite! Um desenvolvedor full stack (em
@@ -16,6 +17,7 @@ export default function StartPage() {
                 </p>
 
                 <h3>Quem está por trás da foto de anime?</h3>
+                <hr />
                 <p>
                     Meu nome é Márcio, sou um jovem paranaense que começou a
                     aprender desenvolvimento web em 2022. Concluí um curso
@@ -25,6 +27,7 @@ export default function StartPage() {
                 </p>
 
                 <h3>O que é a Indie Web?</h3>
+                <hr />
                 <p>
                     Além da sua{' '}
                     <a
@@ -58,6 +61,7 @@ export default function StartPage() {
                 <h3>
                     Ferramentas, bibliotecas e frameworks utilizadas nesse site
                 </h3>
+                <hr />
 
                 <ul>
                     <li>TypeScript</li>
@@ -70,6 +74,7 @@ export default function StartPage() {
                 </ul>
 
                 <h3>Créditos</h3>
+                <hr />
                 <p>
                     Agradeço a todos que criaram os assets usados neste projeto.
                 </p>
@@ -106,16 +111,30 @@ export default function StartPage() {
                         Freepik no Flaticon pelos ícones do{' '}
                         <a
                             target='_blank'
-                            href='https://www.flaticon.com/free-icon/umbrella_586548?term=umbrella&page=1&position=85&origin=search&related_id=586548'
+                            href='https://www.flaticon.com/free-icon/sunrise_1146885?term=sunrise&page=1&position=32&origin=search&related_id=1146885'
+                        >
+                            tema sol
+                        </a>
+                        {', '}
+                        <a
+                            target='_blank'
+                            href='https://www.flaticon.com/free-icon/protection_3301202?term=umbrella&page=2&position=44&origin=tag&related_id=3301202'
                         >
                             tema chuva
                         </a>
-                        {' e '}
+                        {', '}
                         <a
                             target='_blank'
                             href='https://www.flaticon.com/free-icon/storm_1146860?term=weather&page=1&position=17&origin=tag&related_id=1146860'
                         >
                             clima tempestade
+                        </a>
+                        {' e do '}
+                        <a
+                            target='_blank'
+                            href='https://www.flaticon.com/free-icon/cloudy_3873753?term=cloudy&page=3&position=20&origin=tag&related_id=3873753'
+                        >
+                            clima nublado.
                         </a>
                     </li>
                     <li>

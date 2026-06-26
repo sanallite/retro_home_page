@@ -5,12 +5,13 @@ export default function PortfolioPage() {
     return (
         <main className={`${styles.main} ${styles.main_e_sidebar}`}>
             <h2>Meu Portfólio</h2>
+            <hr />
             <p>
                 Aqui você encontra meus projetos de aprendizado feitos desde
                 2023. As descrições são técnicas, breves e não marqueteiras.
             </p>
 
-            <section>
+            <section className={styles.secao_projeto}>
                 <h3>
                     <a
                         target='_blank'
@@ -19,23 +20,27 @@ export default function PortfolioPage() {
                         Site de Fã - Hololive English
                     </a>
                 </h3>
-                <p>
-                    <a
-                        target='_blank'
-                        href='https://github.com/sanallite/ProjetoHololive'
-                    >
-                        Visite o projeto no GiHub
-                    </a>
-                </p>
 
-                <div className='linha-imagem-texto'>
-                    <Image
-                        src={'/portfolio/projetoHololive.png'}
-                        alt='Captura de tela do Projeto Site de Fã - hololive English'
-                        width={200}
-                        height={100}
-                    />
-                    <div>
+                <div className={styles.projeto_imagem_desc}>
+                    <div className={styles.projeto_imagem}>
+                        <Image
+                            src={'/portfolio/projetoHololive.png'}
+                            alt='Captura de tela do Projeto Site de Fã - hololive English'
+                            width={300}
+                            height={150}
+                        />
+                    </div>
+
+                    <div className={styles.projeto_desc}>
+                        <p>
+                            <a
+                                target='_blank'
+                                href='https://github.com/sanallite/ProjetoHololive'
+                            >
+                                Visite o projeto no GiHub
+                            </a>
+                        </p>
+
                         <p>
                             Projeto de site full stack feito em 2025 com o tema
                             de apresentar as Virtual YouTubers da hololive
@@ -56,24 +61,27 @@ export default function PortfolioPage() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className={styles.secao_projeto}>
                 <h3>
                     <a
                         target='_blank'
                         href='https://github.com/sanallite/Estudos-2025-js-ts/tree/main/React/app02_importandoImagens/src'
                     >
-                        Importador automático de imagens para o bundler Vite
+                        Hook - Importador automático de imagens para o bundler
+                        Vite
                     </a>
                 </h3>
 
-                <div>
-                    <Image
-                        src={'/portfolio/importadorVite.png'}
-                        alt='Captura de tela do projeto de importação automática de imagens'
-                        width={200}
-                        height={100}
-                    />
-                    <div>
+                <div className={styles.projeto_imagem_desc}>
+                    <div className={styles.projeto_imagem}>
+                        <Image
+                            src={'/portfolio/importadorVite.png'}
+                            alt='Captura de tela do projeto de importação automática de imagens'
+                            width={300}
+                            height={150}
+                        />
+                    </div>
+                    <div className={styles.projeto_desc}>
                         <p>
                             Hook React que descobre e importa dinamicamente
                             múltiplos arquivos de imagens de uma pasta usando
@@ -89,7 +97,7 @@ export default function PortfolioPage() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className={styles.secao_projeto}>
                 <h3>
                     <a
                         target='_blank'
@@ -99,26 +107,29 @@ export default function PortfolioPage() {
                     </a>
                 </h3>
 
-                <div>
-                    <Image
-                        src={'/portfolio/projetoFinansim1.png'}
-                        alt='Captura de tela da exbição da empresa no app Finansim'
-                        width={50}
-                        height={100}
-                    />
-                    <Image
-                        src={'/portfolio/projetoFinansim2.png'}
-                        alt='Captura de tela da exibição de compras no app Finansim'
-                        width={50}
-                        height={100}
-                    />
-                    <Image
-                        src={'/portfolio/projetoFinansim3.png'}
-                        alt='Captura de tela da exibição de boas vindas no app Finansim'
-                        width={50}
-                        height={100}
-                    />
-                    <div>
+                <div className={styles.projeto_imagem_desc}>
+                    <div className={styles.finansim_imagens}>
+                        <Image
+                            src={'/portfolio/projetoFinansim1.png'}
+                            alt='Captura de tela da exbição da empresa no app Finansim'
+                            width={100}
+                            height={250}
+                        />
+                        <Image
+                            src={'/portfolio/projetoFinansim2.png'}
+                            alt='Captura de tela da exibição de compras no app Finansim'
+                            width={100}
+                            height={250}
+                        />
+                        <Image
+                            src={'/portfolio/projetoFinansim3.png'}
+                            alt='Captura de tela da exibição de boas vindas no app Finansim'
+                            width={100}
+                            height={250}
+                        />
+                    </div>
+
+                    <div className={styles.projeto_desc}>
                         <p>
                             Projeto integrador do meu curso técnico no módulo de
                             desenvolvimento móvel, feito em 2024. O tema é um
@@ -134,12 +145,12 @@ export default function PortfolioPage() {
 
                         <p>
                             Ferramentas: Expo, React Native, JavaScript,
-                            Firebase, API Via CEP, Figma
+                            Firebase, Android Studio, API Via CEP, Figma
                         </p>
                     </div>
                 </div>
             </section>
-            <section>
+            <section className={styles.secao_projeto}>
                 <h3>
                     <a
                         target='_blank'
@@ -149,14 +160,16 @@ export default function PortfolioPage() {
                     </a>
                 </h3>
 
-                <div>
-                    <Image
-                        src={'/portfolio/projetoQuitanda.png'}
-                        alt='Captura de tela do projeto Quitandão Senac'
-                        width={200}
-                        height={100}
-                    />
-                    <div>
+                <div className={styles.projeto_imagem_desc}>
+                    <div className={styles.projeto_imagem}>
+                        <Image
+                            src={'/portfolio/projetoQuitanda.png'}
+                            alt='Captura de tela do projeto Quitandão Senac'
+                            width={300}
+                            height={150}
+                        />
+                    </div>
+                    <div className={styles.projeto_desc}>
                         <p>
                             Projeto Integrador do meu curso técnico no módulo
                             back-end, feito em 2024. O tema é administrar o
@@ -176,7 +189,7 @@ export default function PortfolioPage() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className={styles.secao_projeto}>
                 <h3>
                     <a
                         target='_blank'
@@ -186,15 +199,17 @@ export default function PortfolioPage() {
                     </a>
                 </h3>
 
-                <div className='linha-imagem-texto'>
-                    <Image
-                        src={'/portfolio/projetoZeroi.png'}
-                        alt='Captura de tela do Projeto Zérói'
-                        width={200}
-                        height={100}
-                    />
+                <div className={styles.projeto_imagem_desc}>
+                    <div className={styles.projeto_imagem}>
+                        <Image
+                            src={'/portfolio/projetoZeroi.png'}
+                            alt='Captura de tela do Projeto Zérói'
+                            width={300}
+                            height={150}
+                        />
+                    </div>
 
-                    <div>
+                    <div className={styles.projeto_desc}>
                         <p>
                             Meu primeiro projeto integrador do meu curso
                             técnico, no módulo front-end, feito em 2023. Site
