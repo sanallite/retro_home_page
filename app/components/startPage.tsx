@@ -8,12 +8,13 @@ export default function StartPage() {
                 <hr />
 
                 <p>
-                    Olá, eu sou o Sanallite! Um desenvolvedor full stack (em
-                    desenvolvimento) com afinidade em front-end e UI/UX e esse é
-                    um projeto pessoal de site que tem como objetivo ser uma
-                    mistura de site pessoal com portifólio profissional, usando
-                    como inspiração os sites da época inicial da internet, e da
-                    atual Indie Web, cheios de personalidade e estilo.
+                    Olá, eu sou o Sanallite! Um desenvolvedor front-end (em
+                    desenvolvimento) e esse é um projeto pessoal de site que tem
+                    como objetivo explorar o conceito de sites pessoais e
+                    apresentar meus projetos, mas sem ser estritamente um
+                    portifólio profissional ou um blog, usando como inspiração
+                    os sites da época inicial da internet e da atual Indie Web,
+                    cheios de personalidade e estilo.
                 </p>
 
                 <h3>Quem está por trás da foto de anime?</h3>
@@ -180,6 +181,26 @@ export default function StartPage() {
                             href='https://www.flaticon.com/free-icon/rainy-day_4724094?term=weather&page=1&position=19&origin=tag&related_id=4724094'
                         >
                             clima chuvoso
+                        </a>
+                    </li>
+
+                    <li>
+                        graphicmall no Flaticon pelo ícone da{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.flaticon.com/free-icon/moon_16383376'
+                        >
+                            lua cheia
+                        </a>
+                    </li>
+
+                    <li>
+                        DinosoftLabs no Flaticon pelo ícone da{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.flaticon.com/free-icon/moon_3090580?term=moon+clouds&page=1&position=27&origin=search&related_id=3090580'
+                        >
+                            lua com nuvens
                         </a>
                     </li>
                     <li>

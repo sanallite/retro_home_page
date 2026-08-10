@@ -25,7 +25,7 @@ export default function Sidebar({
                 className={`${styles.botoes_sidebar} ${activePage === 'portfólio' ? `${styles.pagina_ativa}` : ''}`}
                 onClick={() => setActivePage('portfólio')}
             >
-                Portifólio
+                Meu Portfólio
             </button>
             <button className={`${styles.botoes_sidebar}`}>
                 <a target='_blank' href='https://nekoweb.org'>

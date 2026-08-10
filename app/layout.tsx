@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { getWeatherWithTimeout } from '@/lib/weatherInfo'
+import { getCurrentWeather } from '@/lib/weatherInfo'
 import { ThemeProvider } from '@/context/themeContext'
 import ThemedBody from '@/components/themedBody'
 import VideoBackground from '@/components/videoBackground'
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
-    const { temaClima } = await getWeatherWithTimeout()
+    const { temaClima } = await getCurrentWeather()
 
     return (
         <html lang='pt-br'>

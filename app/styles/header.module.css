@@ -12,8 +12,10 @@
     border-width: var(--espessura-borda);
 }
 
-.textos {
-    font-size: 1.2em;
+@media (width >= 640) {
+    .textos {
+        font-size: 1.2em;
+    }
 }
 
 .texto_clima {

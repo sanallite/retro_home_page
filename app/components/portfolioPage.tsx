@@ -8,7 +8,7 @@ export default function PortfolioPage() {
             <hr />
             <p>
                 Aqui você encontra meus projetos de aprendizado feitos desde
-                2023. As descrições são técnicas, breves e não marqueteiras.
+                2023. As descrições são técnicas e breves.
             </p>
 
             <section className={styles.secao_projeto}>
@@ -55,8 +55,8 @@ export default function PortfolioPage() {
                         </p>
 
                         <p>
-                            Ferramentas: JavaScript, HTML, CSS, Vite, Firebase,
-                            YouTube API, Github Actions, Figma
+                            <strong>Ferramentas</strong>: JavaScript, HTML, CSS,
+                            Vite, Firebase, YouTube API, Github Actions, Figma
                         </p>
                     </div>
                 </div>
@@ -93,7 +93,10 @@ export default function PortfolioPage() {
                             garantindo que todas sejam otimizadas pelo bundler.
                         </p>
 
-                        <p>Ferramentas: React, TypeScript, Claude</p>
+                        <p>
+                            <strong>Ferramentas</strong>: React, TypeScript,
+                            Claude
+                        </p>
                     </div>
                 </div>
             </section>
@@ -144,8 +147,9 @@ export default function PortfolioPage() {
                         </p>
 
                         <p>
-                            Ferramentas: Expo, React Native, JavaScript,
-                            Firebase, Android Studio, API Via CEP, Figma
+                            <strong>Ferramentas</strong>: Expo, React Native,
+                            JavaScript, Firebase, Android Studio, API Via CEP,
+                            Figma
                         </p>
                     </div>
                 </div>
@@ -183,8 +187,8 @@ export default function PortfolioPage() {
                         </p>
 
                         <p>
-                            Ferramentas: PHP, MySQL/MariaDB, HTML, CSS,
-                            JavaScript
+                            <strong>Ferramentas</strong>: PHP, MySQL/MariaDB,
+                            HTML, CSS, JavaScript
                         </p>
                     </div>
                 </div>
@@ -221,7 +225,9 @@ export default function PortfolioPage() {
                             consistente.
                         </p>
 
-                        <p>Ferramentas: HTML, CSS, Figma</p>
+                        <p>
+                            <strong>Ferramentas</strong>: HTML, CSS, Figma
+                        </p>
                     </div>
                 </div>
             </section>

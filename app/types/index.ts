@@ -1,14 +1,18 @@
 export type Clima = 'sol' | 'chuva'
 
+export type CondicoesClima =
+    | 'ensolarado'
+    | 'noite_limpa'
+    | 'sol_nuvens'
+    | 'lua_nuvens'
+    | 'nublado'
+    | 'chovendo'
+    | 'tempestade'
+
 export type RetornoGetCurrentWeather = {
     temaClima: Clima
     temperatura?: string
-    condicaoClima?:
-        | 'ensolarado'
-        | 'sol_nuvens'
-        | 'nublado'
-        | 'chovendo'
-        | 'tempestade'
+    condicaoClima?: CondicoesClima
 }
 
 export type PaginaAtiva = 'início' | 'portfólio'
