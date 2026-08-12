@@ -7,7 +7,6 @@ export default function Banner() {
             <Image
                 src={'/sana_banner_yongdal.png'}
                 fill
-                priority
                 alt='Imagem de banner mostrando Tsukumo Sana'
                 style={{ objectFit: 'cover' }}
                 sizes='(min-width: 1024px) 100vw, 50vw'

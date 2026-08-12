@@ -4,6 +4,7 @@ import { getCurrentWeather } from '@/lib/weatherInfo'
 import { ThemeProvider } from '@/context/themeContext'
 import ThemedBody from '@/components/themedBody'
 import VideoBackground from '@/components/videoBackground'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     title: 'Retro Home Page',
@@ -23,6 +24,7 @@ export default async function RootLayout({
                     {children}
                 </ThemedBody>
             </ThemeProvider>
+            <SpeedInsights />
         </html>
     )
 }
