@@ -10,6 +10,7 @@ export default function Banner() {
                 alt='Imagem de banner mostrando Tsukumo Sana'
                 style={{ objectFit: 'cover' }}
                 sizes='(min-width: 1024px) 100vw, 50vw'
+                loading='eager'
             />
             <h1 className={styles.titulo}>{"Sanallite's"} Retro Home Page</h1>
         </div>
